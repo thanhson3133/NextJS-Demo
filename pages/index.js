@@ -1,21 +1,36 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  // const [filters, setfilters] = useState();
+
+  // useEffect(() => {
+  //   console.log(filters);
+  // }, [filters]);
+  
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Learn NextJs TS Dev</title>
+        {/* <title>Thanh Sơn Nè Bé Chang</title>
         <meta name="description" content="Learn NextJs + TypeScript " />
+        <link rel="icon" href="/favicon.ico" /> */}
+        <title>alo alo</title>
+        <meta name="description" content="alo alo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://facebook.com">Thanh Son</a>
+        Thanh Sơn Nè Bé Chang
         </h1>
-
+        <img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t1.15752-9/271932316_1135946097148432_2474306911556889316_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=1r_tOoAKy2oAX_mIeru&tn=wm8d0-KbowfodKge&_nc_ht=scontent.fsgn5-15.fna&oh=03_AVIUWfVnAvrczpXBIhH7_bghnhCgvvD8RYh5fFrruQyhSA&oe=62252026" alt="Girl in a jacket" width="500" height="600"></img>
+        <h2>I love you bé chang</h2>
+        <h2>Đừng có cap màn hình up story nha a khóc á :((((((</h2>
+{/* 
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
@@ -49,11 +64,11 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
-        <a
+        {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -62,7 +77,7 @@ export default function Home() {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
+        </a> */}
       </footer>
     </div>
   )
