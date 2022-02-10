@@ -26,10 +26,13 @@ export default function Home() {
   
   return (
     <div className={styles.container}>
-      
+      <Head>
+        <title>Coder Wikipedia | Home</title>
+        <meta name='keywords' content='coders'></meta>
+      </Head>
       <main className={styles.main}>
-        <h1>Home Page</h1>
-        <button onClick={gotoDetailPage}>Go to PostDetail</button>
+        <h1 className={styles.title}>Home Page</h1>
+        {/* <button onClick={gotoDetailPage}>Go to PostDetail</button> */}
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
@@ -56,8 +59,26 @@ export default function Home() {
             </p>
           </a>
         </div>
-        <div style={{marginTop:' 2000px'}}></div>
-        <Link href="/about"><a>Go to about</a></Link>
+      <Link href="/coders"><button className='btn'>See All Coders</button></Link> 
+        {/* <div style={{marginTop:' 2000px'}}></div>
+        <Link href="/about"><a>Go to about</a></Link> */}
+        <style jsx>
+          {
+            `
+              .btn{
+                display: block;
+                width: 150px;
+                padding: 8px 0;
+                margin: 20px auto;
+                background: #ffbf49;
+                color: black;
+                text-align: center;
+                border: none;
+                border-radius: 3px;
+              }
+            `
+          }
+        </style>
       </main>
     </div>
   )
