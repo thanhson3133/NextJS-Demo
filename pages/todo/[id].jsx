@@ -27,6 +27,7 @@ export default function TodoDetails({data}) {
         <h1>Todo Details</h1>
         <p>UserId: {data.userId}</p>
         <p>Title: {data.title}</p>
+        <p>thanhson</p>
     </div>
   )
 }
